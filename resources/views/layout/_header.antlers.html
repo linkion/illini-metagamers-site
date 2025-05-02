@@ -1,14 +1,31 @@
-{{#
-    @name Header
-    @desc The sites header rendered on each page.
-#}}
+{{# @name Header @desc The sites header rendered on each page. #}}
 
 <!-- /layout/_header.antlers.html -->
-<header class="fluid-grid py-4">
-    <div class="span-content flex justify-between items-center">
-        {{# Make partials you want to use for the header or use and edit premade examples like the following ones. #}}
-        {{ partial:components/logo width="120" }}
-        {{ partial:navigation/main }}
+<header>
+    <div id="block-raptor-material-branding" style="background-color: #222">
+        <div class="logo">
+            <div class="background">
+                <div class="column red"></div>
+                <div class="column orange"></div>
+                <div class="column yellow"></div>
+                <div class="column green"></div>
+                <div class="column blue"></div>
+                <div class="column indigo"></div>
+                <div class="column violet"></div>
+            </div>
+            <a href="/" title="Home" rel="home" class="logobox">
+                <img src="visuals/logo.svg" alt="Home" />
+            </a>
+        </div>
+        <h1 class="siteName">
+            <div class="headerBackground"></div>
+            <a href="/" title="Home" rel="home">Illini Metagamers</a>
+        </h1>
+    </div>
+    <div class="span-content flex justify-between items-center p-6 fluid-grid">
+        {{# Make partials you want to use for the header or use and edit premade
+        examples like the following ones. #}} {{ partial:components/logo
+        width="120" }} {{ partial:navigation/main }}
     </div>
 </header>
 <!-- End: /layout/_header.antlers.html -->

@@ -15,6 +15,7 @@
         "laravel/tinker": "^2.9",
         "spatie/browsershot": "^5.0",
         "spatie/image": "^3.8",
+        "statamic/cli": "^3.6",
         "statamic/cms": "^5.0",
         "studio1902/statamic-peak-browser-appearance": "^3.4",
         "studio1902/statamic-peak-seo": "^8.0",

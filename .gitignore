@@ -18,4 +18,12 @@ yarn-error.log
 
 /.phpunit.cache
 
-/public/build/
+/public/build/# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml

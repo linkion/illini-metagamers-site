@@ -1,0 +1,288 @@
+/** LAYOUT STRUCTURE **/
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+	height: 100vh;
+}
+
+.layout-container > header {
+    background-size: cover;
+    background-position-y: 0px;
+    /* height: 245px; */
+    /* min-height: 245px; */
+}
+
+	.layout-container > header > div {
+		display: flex;
+		flex-direction: column;
+		/* height: 245px; */
+		/* min-height: 245px; */
+	}
+
+	#block-raptor-material-branding {
+		flex: 1 0 auto;
+		flex-direction: column;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		padding: 0 1em;
+	}
+
+		div#block-raptor-material-branding a {
+			text-align: center;
+			display: flex;
+		}
+
+		#block-raptor-material-main-menu {
+			align-items: center;
+		}
+
+			#block-raptor-material-main-menu ul {
+				padding: 0;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				margin: 0 auto;
+				max-width: 900px;
+				text-align: center;
+			}
+
+			#block-raptor-material-main-menu ul li {
+				display: block;
+				list-style-type: none;
+				/* line-height: 45px; */
+				flex: 1 0 auto;
+				display: flex;
+				flex-direction: column;
+			}
+
+.layout-container > main {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	flex: 1 0 auto;
+	padding: 0 .75em;
+	box-sizing: border-box;
+}
+
+.layout-container > footer {
+    background-color: #424242;
+    color: #9e9e9e;
+    padding-top: 16px;
+}
+
+	.layout-container > footer a {
+		color: #9e9e9e;
+		text-decoration: none;
+	}
+
+	.layout-container > footer a:hover, .layout-container > footer a:focus {
+		color: #008F59;
+		text-decoration: underline;
+	}
+
+.layout-container > footer .page_footer, .page_footer_second > div {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 8px;
+	text-align: center;
+}
+
+.layout-container > footer .page_footer > div {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+}
+
+.layout-container > footer .page_footer_second {
+    padding-bottom: 8px;
+    padding-top: 8px;
+    background-color: #333;
+    margin-top: 8px;
+    font-size: .9em;
+}
+
+	.layout-container > footer ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+/** LAYOUT STYLING **/
+body {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-weight: 100;
+	color: #565656;
+}
+
+h1, h2 {
+    font-weight: normal;
+	color: #222;
+}
+
+a {
+	color: #008F59;
+}
+
+a:hover, a:focus {
+	color: #00B973;
+}
+
+/** HEADER **/
+
+.layout-container > header {
+    background-color: #222;
+}
+
+div#block-raptor-material-branding, div#block-raptor-material-branding a {
+    color: #fff;
+    text-decoration: none;
+}
+
+div#block-raptor-material-branding a {
+    font-size: 2.5em;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-family: 'Quicksand',sans-serif;
+}
+
+.logo .background, .logo .background .column, h1.siteName a {
+	transition: all .4s;
+}
+
+.logo {
+    width: 12em;
+    height: 12em;
+    margin: 1em;
+    border-radius: 50%;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+    .logo .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        /* background: chartreuse; */
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+		transform: rotate(-30deg);
+    }
+        .logo .background .column {
+            border: 1px green;
+            /* width: 14.2%; */
+            height: 100%;
+            display: inline-block;
+            flex: 1;
+        }
+        @media (any-hover: hover) {
+        .logo .background .column:nth-child(2n) {
+            transform: translateY(-105%);
+            -webkit-transform: translateY(-105%);
+            -ms-transform: translateY(-105%);
+        }
+        .logo .background .column:nth-child(2n+1) {
+            transform: translateY(105%);
+            -webkit-transform: translateY(105%);
+            -ms-transform: translateY(105%);
+        }
+        }
+        .logo .background .column.red {background-color: #db0f0f;}
+        .logo .background .column.orange {background-color: #ffb710;}
+        .logo .background .column.yellow {background-color: #f5d800;}
+        .logo .background .column.green {background-color: #56d516;}
+        .logo .background .column.blue {background-color: #139fb4;}
+        .logo .background .column.indigo {background-color: #1251af;}
+        .logo .background .column.violet {background-color: #5c12af;}
+
+    .logo .logobox {
+        z-index: 1;
+    }
+	
+h1.siteName {
+    font-size: 1.5em;
+    margin: 0 0 1em 0;
+}
+	
+header h1.siteName a {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background: #fff;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
+	
+/* Hover stuff */
+@media (any-hover: hover) {
+	header:hover .logo .background {
+		transform: rotate(30deg);
+	}
+	header:hover .logo .background .column {
+		transform: none;
+		-webkit-transform: none;
+		-ms-transform: none;
+	}
+	header:hover h1.siteName a {
+		background: -webkit-gradient( linear, left top, right top, color-stop(0, #db0f0f), color-stop(0.15, #ffb710), color-stop(0.30, #f5d800), color-stop(0.45, #56d516), color-stop(0.60, #139fb4), color-stop(0.75, #1251af), color-stop(0.90, #5c12af) );
+		-webkit-background-clip: text;
+	}
+}
+@media (any-hover: none) {
+	header .logo .background {
+		transform: rotate(30deg);
+	}
+	header h1.siteName a {
+		background: -webkit-gradient( linear, left top, right top, color-stop(0, #db0f0f), color-stop(0.15, #ffb710), color-stop(0.30, #f5d800), color-stop(0.45, #56d516), color-stop(0.60, #139fb4), color-stop(0.75, #1251af), color-stop(0.90, #5c12af) );
+		-webkit-background-clip: text;
+	}
+}
+
+
+#block-raptor-material-main-menu {
+	background-color: #444;
+	text-transform: uppercase;
+}
+
+	#block-raptor-material-main-menu ul li a {
+		color: #fafafa;
+		text-decoration: none;
+		font-size: .9em;
+		opacity: .87;
+		display: block;
+		border-bottom: 3px solid transparent;
+		line-height: 3em;
+		flex: 1;
+	}
+	
+	#block-raptor-material-main-menu ul.contextual-links li a {
+		color: #333;
+		text-transform: none;
+		opacity: 1;
+	}
+	
+	#block-raptor-material-main-menu ul li a.is-active {
+		border-bottom-color: #ffffffbf;
+	}
+	
+	#block-raptor-material-main-menu ul li a:hover, #block-raptor-material-main-menu ul li a:focus {
+		background-color: rgba(255, 255, 255, 0.2);
+	}
