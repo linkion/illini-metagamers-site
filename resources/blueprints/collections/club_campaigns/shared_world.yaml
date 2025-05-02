@@ -1,3 +1,4 @@
+title: 'Shared World'
 tabs:
   main:
     display: Main
@@ -11,11 +12,6 @@ tabs:
               required: true
               validate:
                 - required
-          -
-            handle: content
-            field:
-              type: markdown
-              localizable: true
   sidebar:
     display: Sidebar
     sections:
@@ -28,6 +24,11 @@ tabs:
               localizable: true
               validate: 'max:200'
           -
+            handle: year
+            field:
+              type: integer
+              display: Year
+          -
             handle: parent
             field:
               type: entries
@@ -36,4 +37,3 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
-title: 'Club Campaign'

@@ -1,8 +1,9 @@
 title: 'Club Campaigns'
 template: club-campaigns/show
 layout: layout
+mount: 8132222d-09d2-4927-9c2b-c198326d0778
 revisions: false
-route: '/club-campaigns/{year}/{slug}'
+route: '{mount}/{year}/{slug}'
 sort_dir: asc
 date_behavior:
   past: public
@@ -12,3 +13,6 @@ preview_targets:
     label: Entry
     url: '{permalink}'
     refresh: true
+structure:
+  root: false
+  max_depth: 2
