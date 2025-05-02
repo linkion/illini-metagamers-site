@@ -30,6 +30,13 @@ fields:
               fields:
                 -
                   import: cards
+            campaign-list:
+              display: "Campaign List"
+              instructions: "Present a view of Club Campaigns"
+              icon: link
+              fields:
+                -
+                  import: campaign_list
         text:
           display: Text
           instructions: 'Text based blocks.'

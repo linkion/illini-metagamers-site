@@ -28,12 +28,8 @@ tabs:
               localizable: true
               validate: 'max:200'
           -
-            handle: parent
+            handle: year
             field:
-              type: entries
-              collections:
-                - club_campaigns
-              max_items: 1
-              listable: false
-              localizable: true
-title: 'Club Campaign'
+              type: integer
+              display: Year
+title: 'Shared World'

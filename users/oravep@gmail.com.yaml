@@ -2,3 +2,11 @@ name: 'Patrick Orave'
 super: true
 id: 1e0a79f7-d5a3-4406-bdac-a32891dce847
 password_hash: $2y$12$bpwrxqiFii9YxkmGwF85gu4fu/WuiQeTeq2dhfD/kB7.fQP4S.1UC
+preferences:
+  collections:
+    club_campaigns:
+      columns:
+        - title
+        - slug
+        - status
+        - year
