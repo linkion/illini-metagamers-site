@@ -48,7 +48,7 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          port: 22
+          port: 21
           server-dir: "/public_html/"
           dry-run: true
           log-level: verbose
