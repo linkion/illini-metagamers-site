@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Get the latest code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@master
       - name: Install Composer Dependencies
         run: composer install --no-dev
@@ -29,6 +31,10 @@ jobs:
           echo DB_USERNAME=${{ secrets.DB_USERNAME }} >> .env
           echo DB_PASSWORD=${{ secrets.DB_PASSWORD }} >> .env
           echo DB_HOST=${{ secrets.DB_HOST }} >> .env
+          echo MAIL_HOST=${{ secrets.MAIL_HOST }} >> .env
+          echo MAIL_USERNAME=${{ secrets.MAIL_USERNAME }} >> .env
+          echo MAIL_PASSWORD=${{ secrets.MAIL_PASSWORD }} >> .env
+          echo MAIL_FROM_ADDRESS=${{ secrets.MAIL_USERNAME }} >> .env
       - name: Generate key
         run: php artisan key:generate
       - name: Cache clear & stache clear
@@ -45,10 +51,10 @@ jobs:
           pass: ${{ secrets.FTP_PASSWORD }}
           parallel: 10
           # lftp settings
-          onlyNewer: false
+          onlyNewer: true
           settings: 'sftp:auto-confirm=yes'
           # Mirror command options
           localDir: '.'
           remoteDir: '/public_html/'
           reverse: true
-          options: '--verbose --ignore-time'
+          options: '--verbose'
