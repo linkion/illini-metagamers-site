@@ -51,11 +51,11 @@ jobs:
           pass: ${{ secrets.FTP_PASSWORD }}
           parallel: 10
           # lftp settings
-          onlyNewer: false
-          settings: "sftp:auto-confirm=yes"
+          onlyNewer: true
+          settings: 'sftp:auto-confirm=yes'
           # Mirror command options
-          localDir: "."
-          remoteDir: "/public_html/"
+          localDir: '.'
+          remoteDir: '/public_html/'
           reverse: true
-          options: "--verbose --ignore-time"
+          options: '--verbose'
           ignoreFile: ".lftp_ignore"
