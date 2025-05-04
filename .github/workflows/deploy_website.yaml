@@ -50,4 +50,5 @@ jobs:
           protocol: ftps
           port: 21
           server-dir: "/public_html/"
+          dry-run: true
           log-level: verbose
