@@ -38,6 +38,6 @@ jobs:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v3.1.1
         with:
-          ftp-server: ftpes://${{ secrets.FTP_HOST }}
+          ftp-server: ftps://${{ secrets.FTP_HOST }}
           ftp-username: ${{ secrets.FTP_USER }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
