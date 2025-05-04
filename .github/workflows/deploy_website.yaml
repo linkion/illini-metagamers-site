@@ -39,6 +39,8 @@ jobs:
         run: php artisan cache:clear && php please stache:clear && php please cache:clear
       - name: Process images
         run: php please assets:generate-presets
+      - name: Rename Public Directory
+        run: mv public public_html
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
       - name: Deploy files via SFTP
