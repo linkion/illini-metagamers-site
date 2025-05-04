@@ -57,5 +57,5 @@ jobs:
           localDir: '.'
           remoteDir: '/public_html/'
           reverse: true
-          options: '--verbose --ignore-time --dereference --scan-all-first'
+          options: '--verbose --ignore-time -L --scan-all-first'
           ignoreFile: ".lftp_ignore"
