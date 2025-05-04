@@ -50,4 +50,4 @@ jobs:
           localDir: '.'
           remoteDir: '/public_html/'
           reverse: true
-          options: '--verbose --ignore-time'
+          options: '--verbose'
