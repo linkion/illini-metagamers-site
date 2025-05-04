@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Get the latest code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@master
       - name: Install Composer Dependencies
         run: composer install --no-dev
@@ -49,10 +51,10 @@ jobs:
           pass: ${{ secrets.FTP_PASSWORD }}
           parallel: 10
           # lftp settings
-          onlyNewer: false
+          onlyNewer: true
           settings: 'sftp:auto-confirm=yes'
           # Mirror command options
           localDir: '.'
           remoteDir: '/public_html/'
           reverse: true
-          options: '--verbose --ignore-time'
+          options: '--verbose'
