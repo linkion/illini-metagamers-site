@@ -18,6 +18,8 @@ yarn-error.log
 
 /.phpunit.cache
 
+/database/database.sqlite
+
 /public/build/# Devenv
 .devenv*
 devenv.local.nix
