@@ -49,13 +49,13 @@ jobs:
           port: 22
           user: ${{ secrets.FTP_USER }}
           pass: ${{ secrets.FTP_PASSWORD }}
-          parallel: 10
+          parallel: 20
           # lftp settings
-          onlyNewer: true
+          onlyNewer: false
           settings: 'sftp:auto-confirm=yes'
           # Mirror command options
           localDir: '.'
           remoteDir: '/public_html/'
           reverse: true
-          options: '--verbose'
+          options: '--verbose --ignore-time --dereference --scan-all-first'
           ignoreFile: ".lftp_ignore"
