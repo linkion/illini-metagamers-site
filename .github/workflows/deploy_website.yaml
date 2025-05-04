@@ -36,7 +36,7 @@ jobs:
       - name: Generate key
         run: php artisan key:generate
       - name: Cache clear & stache clear
-        run: php artisan cache:clear && php please stache:clear && php please cache:clear && php artisan config:cache
+        run: php artisan cache:clear && php please stache:clear && php please cache:clear
       - name: Process images
         run: php please assets:generate-presets
       - name: Directory Permissions
