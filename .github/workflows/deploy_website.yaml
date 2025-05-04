@@ -55,7 +55,7 @@ jobs:
           settings: "sftp:auto-confirm=yes"
           # Mirror command options
           localDir: "."
-          remoteDir: "/"
+          remoteDir: "/public_html/"
           reverse: true
-          options: "--verbose --ignore-time --dry-run"
+          options: "--verbose --ignore-time"
           ignoreFile: ".lftp_ignore"
