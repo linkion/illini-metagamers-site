@@ -1,3 +1,4 @@
+title: 'Campaign Year'
 tabs:
   main:
     display: Main
@@ -12,25 +13,11 @@ tabs:
               validate:
                 - required
           -
-            handle: featured_image
+            handle: description
             field:
-              max_files: 1
-              min_files: 1
-              container: images
-              type: assets
-              display: 'Featured Image'
-              instructions: 'Image displayed in club campaign list.'
-          -
-            handle: short_description
-            field:
-              type: markdown
-              display: 'Short Description'
-              instructions: '1-2 sentence short description'
-      -
-        display: 'Page Builder'
-        fields:
-          -
-            import: page_builder
+              remove_empty_nodes: false
+              type: bard
+              display: Description
   sidebar:
     display: Sidebar
     sections:
@@ -51,9 +38,3 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
-          -
-            handle: game_master
-            field:
-              type: text
-              display: 'Game Master'
-title: 'Club Campaign'

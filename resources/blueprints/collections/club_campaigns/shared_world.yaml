@@ -12,6 +12,17 @@ tabs:
               required: true
               validate:
                 - required
+          -
+            handle: short_description
+            field:
+              type: markdown
+              display: 'Short Description'
+              instructions: '1-2 sentence short description'
+      -
+        display: 'Page Builder'
+        fields:
+          -
+            import: page_builder
   sidebar:
     display: Sidebar
     sections:
