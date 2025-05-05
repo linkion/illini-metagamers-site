@@ -43,17 +43,21 @@ tabs:
               localizable: true
               validate: 'max:200'
           -
-            handle: parent
+            handle: year
             field:
-              type: entries
-              collections:
-                - club_campaigns
-              max_items: 1
-              listable: false
-              localizable: true
+              type: integer
+              display: Year
           -
             handle: game_master
             field:
               type: text
               display: 'Game Master'
+          -
+            handle: parent_region
+            field:
+              max_items: 1
+              collections:
+                - club_campaign_regions
+              type: entries
+              display: 'Parent Region'
 title: 'Club Campaign'

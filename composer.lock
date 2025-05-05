@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10aed64ee7c4571cc1350d544098c4b1",
+    "content-hash": "9c687f5ec0b67752070f9e568343ec2f",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -7950,6 +7950,47 @@
             "time": "2024-12-21T16:25:41+00:00"
         },
         {
+            "name": "tv2regionerne/statamic-reverse-relationship",
+            "version": "v1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tv2regionerne/statamic-reverse-relationship.git",
+                "reference": "f2c57554059b314f8cf2799eb6c85fcfb3374a9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tv2regionerne/statamic-reverse-relationship/zipball/f2c57554059b314f8cf2799eb6c85fcfb3374a9a",
+                "reference": "f2c57554059b314f8cf2799eb6c85fcfb3374a9a",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^4.39.0 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tv2regionerne\\StatamicReverseRelationship\\ServiceProvider"
+                    ]
+                },
+                "statamic": {
+                    "name": "Statamic Reverse Relationship",
+                    "description": "Statamic Reverse Relationship addon"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tv2regionerne\\StatamicReverseRelationship\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/tv2regionerne/statamic-reverse-relationship/issues",
+                "source": "https://github.com/tv2regionerne/statamic-reverse-relationship/tree/v1.6.1"
+            },
+            "time": "2024-05-16T08:30:18+00:00"
+        },
+        {
             "name": "ueberdosis/tiptap-php",
             "version": "1.4.0",
             "source": {
@@ -10818,12 +10859,12 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }

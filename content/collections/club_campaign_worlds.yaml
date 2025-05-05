@@ -1,9 +1,8 @@
-title: 'Club Campaigns'
+title: 'Club Campaign Worlds'
 template: default
 layout: layout
-mount: 8132222d-09d2-4927-9c2b-c198326d0778
 revisions: false
-route: '{parent_uri}/{year}/{slug}'
+route: 'club-campaign/worlds/{year}/{slug}'
 sort_dir: asc
 date_behavior:
   past: public

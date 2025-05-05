@@ -1,0 +1,53 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              type: markdown
+              localizable: true
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: year
+            field:
+              type: integer
+              display: Year
+              validate:
+                - required
+          -
+            handle: club_campaign_world
+            field:
+              max_items: 1
+              collections:
+                - club_campaign_worlds
+              type: entries
+              display: 'Club Campaign World'
+          -
+            handle: campaign_in_region
+            field:
+              collection: club_campaigns
+              field: parent_region
+              type: reverse_relationship
+              display: 'Campaign In Region'
+              visibility: computed
+title: 'Club Campaign Region'
