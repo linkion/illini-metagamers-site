@@ -3,7 +3,13 @@ data:
   social_media:
     -
       id: trJdEAn4
-      handle: studio1902
+      handle: linkion/illini-metagamers-site
       prefix: 'https://www.github.com/'
       type: github
+      enabled: true
+    -
+      id: maak1lsl
+      handle: the_illini_metagamers
+      prefix: 'https://www.instagram.com/'
+      type: instagram
       enabled: true

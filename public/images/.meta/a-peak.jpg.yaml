@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Snow capped mountain peaks'
+  exempt_from_alt: false
 size: 1076743
-last_modified: 1746058648
+last_modified: 1746376320
 width: 3696
 height: 2448
 mime_type: image/jpeg
