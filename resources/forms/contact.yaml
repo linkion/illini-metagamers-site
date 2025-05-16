@@ -1,17 +1,16 @@
 title: Contact
-honeypot: fax
+honeypot: email
 email:
   -
-    to: info@site.com
-    from: info@site.com
+    id: B75l3b5V
+    to: oravep@gmail.com
     reply_to: '{{ email }}'
     subject: '{{ trans:strings.form_subject_received }}'
     html: email/form_owner
     text: email/form_owner_text
   -
+    id: m9Pq7Q1B
     to: '{{ email }}'
-    from: info@site.com
-    reply_to: info@site.com
     subject: '{{ trans:strings.form_subject_sent }}'
     html: email/form_sender
     text: email/form_sender_text
