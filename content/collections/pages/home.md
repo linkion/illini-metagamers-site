@@ -2,8 +2,8 @@
 id: home
 blueprint: page
 title: Home
-updated_by: ceaa75bd-bc37-4a8b-b0f2-b7af70e58b0e
-updated_at: 1693487994
+updated_by: 1
+updated_at: 1746857024
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -20,25 +20,48 @@ page_builder:
         content:
           -
             type: text
-            text: 'Start out on top'
+            text: 'What are we?'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Peak is your personal bespoke development sherpa. Start every project with this kit full of development goodies. '
+            text: "The Illini Metagamers is a club for anyone who loves any game that can be played on a table [and then some]. We have a large focus on\_RPGs (such as D&D or Pathfinder), board games (such as Betrayal, Sentinels, or Shadow Hunters), and card games (such as Magic: the Gathering), but anyone can feel free to bring anything to play. Everything we do is very casual. We're also very new-player friendly! No experience is required for any of our games/events! There will always be someone to help you out and guide you along so that you can start having fun as quick as possible.\_"
       -
         type: paragraph
         content:
           -
             type: text
-            text: "But beware, this kit ain't here to be pretty. There are some examples of what Peak can do, but the rest is up to you. "
+            text: "Game Nights are held at 7pm every Saturday in the English Building atrium on the lower floor.\_"
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Get climbing!'
+            text: "We also host a club-wide, year-long RPG campaign, run by members of the club. It's for new and experienced players alike, designed to be an opportunity for everyone to come together to play, exploring new systems and ideas.\_"
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'More info '
+          -
+            type: text
+            text: "on our club Discord server:\_"
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://discord.gg/Am3XHFj.'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'https://discord.gg/Am3XHFj.'
     type: article
     enabled: true
   -
