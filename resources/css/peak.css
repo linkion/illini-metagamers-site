@@ -3,7 +3,7 @@
 @source "../../content/**/*.md";
 @source "../../vendor/studio1902/**/*";
 
-@config '../js/tailwind.peak.js';
+@config '../js/tailwind.config.js';
 
 @plugin "@tailwindcss/forms";
 

@@ -37,6 +37,13 @@ fields:
               fields:
                 -
                   import: campaign_list
+            calendar:
+              display: Calendar
+              instructions: "Present a calendar with events"
+              icon: calendar
+              fields:
+                -
+                  import: calendar
         text:
           display: Text
           instructions: 'Text based blocks.'

@@ -1,0 +1,13 @@
+title: Calendar
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      localizable: true
+      display: Title
+  -
+    handle: ical
+    field:
+      type: text
+      display: iCal Link

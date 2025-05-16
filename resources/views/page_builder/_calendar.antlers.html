@@ -1,0 +1,30 @@
+{{#
+@name Campaign List
+@desc Calendar page builder block.
+@set page.page_builder.calendar
+#}}
+
+<!-- /page_builder/_calendar.antlers.html -->
+<script src="https://unpkg.com/ical.js/dist/ical.es5.min.cjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js"></script>
+<script src=" https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.17/index.global.min.js "></script>
+
+
+<div class="w-full max-w-7xl mx-auto px-4 lg:px-8 xl:px-14">
+    <div id="calendar"></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            events: {
+                url: '{{ ical }}',
+                format: 'ics'
+            }
+        });
+        calendar.render();
+    });
+</script>
+<!-- End: /page_builder/_calendar.antlers.html -->
