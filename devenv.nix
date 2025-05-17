@@ -10,6 +10,13 @@
     # https://devenv.sh/languages/
     languages.php = {
         enable = true;
+        extensions = [
+            "intl"
+            "mbstring"
+            "gd"
+            "imagick"
+            "zip"
+        ];
     };
 
     languages.javascript = {
