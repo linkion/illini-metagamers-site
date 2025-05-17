@@ -36,6 +36,15 @@
 }
 
 @layer base {
+    @font-face {
+        font-family: 'quicksand';
+        src: url('/resources/fonts/Quicksand-SemiBold.woff2') format('woff2');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+
     html {
         color: var(--color-neutral);
         /* Set sans, serif or mono stack with optional custom font as default. */
