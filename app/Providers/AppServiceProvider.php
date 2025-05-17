@@ -34,6 +34,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // Force HTTPS if the environment variable is set
+        if(env('FORCE_HTTPS',false)===true) {
+            URL::forceScheme('https');
+        }
+
+
         // Statamic::script('app', 'cp');
         // Statamic::style('app', 'cp');
 
