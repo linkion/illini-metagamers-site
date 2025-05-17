@@ -36,7 +36,7 @@ class AppServiceProvider extends ServiceProvider
     {
         // Force HTTPS if the environment variable is set
         if(env('FORCE_HTTPS',false)===true) {
-            URL::forceScheme('https');
+            \Illuminate\Support\Facades\URL::forceScheme('https');
         }
 
 
