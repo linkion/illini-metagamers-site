@@ -1,5 +1,5 @@
 title: 'Club Campaigns'
-template: default
+template: club-campaigns/show
 layout: layout
 mount: 8132222d-09d2-4927-9c2b-c198326d0778
 revisions: false

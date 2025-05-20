@@ -53,6 +53,47 @@ tabs:
               type: text
               display: 'Game Master'
           -
+            handle: weekday
+            field:
+              options:
+                -
+                  key: Monday
+                  value: null
+                -
+                  key: Tuesday
+                  value: null
+                -
+                  key: Wednesday
+                  value: null
+                -
+                  key: Thursday
+                  value: null
+                -
+                  key: Friday
+                  value: null
+                -
+                  key: Saturday
+                  value: null
+                -
+                  key: Sunday
+                  value: null
+              type: select
+              display: Weekday
+          -
+            handle: time_from
+            field:
+              default: '7:00 PM'
+              type: time
+              display: 'Time From'
+              width: 50
+          -
+            handle: time_to
+            field:
+              default: '11:00PM'
+              type: time
+              display: 'Time To'
+              width: 50
+          -
             handle: parent_region
             field:
               max_items: 1

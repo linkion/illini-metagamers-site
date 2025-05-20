@@ -1,1 +1,38 @@
-{{ title }}
+<main class="py-8 md:py-10 lg:py-12" id="content">
+    <section class="fluid-grid" >
+        <figure class="not-prose span-lg">
+            {{ partial:statamic-peak-tools::components/picture :image="featured_image" class="w-full rounded-md" cover="false" lazy="true" sizes="
+                    {{ switch(
+                    (size == 'md') => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
+                    (size == 'lg') => '(min-width: 1280px) 960px, (min-width: 768px) 75vw, 90vw',
+                    (size == 'xl') => '(min-width: 1280px) 1150px, 90vw',
+                    () => '100vw'
+                    )}}
+                    " }}
+
+            {{ partial:typography/caption as="figcaption" }}
+        </figure>
+
+    </section>
+
+    <div class="stack-12">
+        <div class="fluid-grid my-5">
+            <div class="span-md">
+                {{ partial:typography/h1 content="{{ title }}"}}
+                {{ partial:typography/p content="
+                    Game mastered by {{ game_master }}
+                    From {{ time_from | format("g:i A") }} to {{ time_to | format("g:i A") }}
+                    On {{ weekday }}s
+                "}}
+                <hr />
+            </div>
+
+        </div>
+
+        
+        {{ page_builder scope="block" }}
+            {{ partial src="page_builder/{type}" }}
+        {{ /page_builder }}
+    </div>
+    
+</main>
