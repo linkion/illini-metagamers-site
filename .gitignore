@@ -16,11 +16,15 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 
+.DS_Store
+
 /.phpunit.cache
 
 /database/database.sqlite
 
-/public/build/# Devenv
+/public/build/
+
+# Devenv
 .devenv*
 devenv.local.nix
 
