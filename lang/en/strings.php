@@ -68,4 +68,18 @@ return [
     'next' => 'next',
     'of' => 'of',
     'previous' => 'previous',
+
+     // News
+    'news_all' => 'All articles',
+    'news_more' => 'More articles',
+    'news_read_more' => 'Read more',
+
+    // Dark mode
+    'theme_toggle_dark' => 'Use dark theme.',
+    'theme_toggle_light' => 'Use light theme.',
+    'theme_toggle_system' => 'Use system preference.',
+    'theme_toggle_dark_short' => 'Dark',
+    'theme_toggle_light_short' => 'Light',
+    'theme_toggle_system_short' => 'System',
+    'theme_toggle_dark_toggle_open' => 'Dark theme: open site theme picker.',
 ];

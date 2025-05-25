@@ -71,6 +71,11 @@ return [
             'limit' => '5',
             'width' => 100,
         ],
+        [
+            'type' => 'collection',
+            'collection' => 'news',
+            'width' => 50
+        ],
     ],
 
     /*

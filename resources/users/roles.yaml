@@ -34,6 +34,15 @@ editor:
     - 'view contact form submissions'
     - 'delete contact form submissions'
     - 'access default site'
+    - 'view news entries'
+    - 'edit news entries'
+    - 'create news entries'
+    - 'delete news entries'
+    - 'publish news entries'
+    - 'reorder news entries'
+    - 'edit other authors news entries'
+    - 'publish other authors news entries'
+    - 'delete other authors news entries'
 marketeer:
   title: Marketeer
   permissions:

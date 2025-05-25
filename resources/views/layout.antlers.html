@@ -5,11 +5,12 @@
 
 <!-- /layout.antlers.html -->
 <!doctype html>
-<html lang="{{ site:short_locale }}" class="antialiased scroll-smooth scroll-pt-4">
+<html lang="{{ site:short_locale }}" class="antialiased scroll-smooth scroll-pt-4 scheme-light dark:scheme-dark">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="alternate" type="application/rss+xml" title="News Feed" href="{{ config:app:url }}/feed/news"/>
         {{ vite src="resources/css/site.css|resources/js/site.js" }}
         {{ partial:statamic-peak-seo::snippets/seo }}
         {{ partial:statamic-peak-browser-appearance::snippets/browser_appearance }}

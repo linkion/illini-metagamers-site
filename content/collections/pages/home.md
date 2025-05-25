@@ -3,13 +3,27 @@ id: home
 blueprint: page
 title: Home
 updated_by: 1
-updated_at: 1746857024
+updated_at: 1748209426
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 page_builder:
+  -
+    id: mb46p0i5
+    title: 'Join Our Community!'
+    text: 'We at the Illini Metagamers invite you to join us, enjoy tabletop gaming, and meet like minded people!'
+    buttons:
+      -
+        id: mb46qo21
+        label: 'Join us!'
+        link_type: url
+        target_blank: false
+        url: 'https://google.com'
+        button_type: button
+    type: call_to_action
+    enabled: true
   -
     id: T5ZZwBfn
     article:
@@ -65,14 +79,56 @@ page_builder:
     type: article
     enabled: true
   -
+    id: mb3qh6h3
+    title: 'Meet The Club Officers'
+    people:
+      -
+        id: mb3qismi
+        name: Michael
+        type: card
+        enabled: true
+        image: blank-profile-picture.webp
+        title: President
+      -
+        id: mb3qix96
+        name: Rose
+        title: Vice-President
+        type: card
+        enabled: true
+        image: blank-profile-picture.webp
+      -
+        id: mb3qh7i4
+        name: 'Patrick Orave'
+        title: Treasurer
+        type: card
+        enabled: true
+        text: 'I manage money and stuff'
+        image: blank-profile-picture.webp
+      -
+        id: mb3qj2oz
+        name: Ethan
+        title: 'Membership Director'
+        type: card
+        enabled: true
+        image: blank-profile-picture.webp
+      -
+        id: mb3qj7aq
+        name: 'Sam Brown'
+        title: 'Event Coordinator'
+        type: card
+        enabled: true
+        image: blank-profile-picture.webp
+    type: team
+    enabled: true
+  -
     id: eFlcYHyl
-    title: Features
+    title: 'What do we do?'
     type: cards
     enabled: true
     cards:
       -
         id: lly5m22j
-        title: 'Check out a form'
+        title: 'Club Campaign'
         text: "Peak renders forms and mail templates dynamically so you can add as many forms as you'd like, just by creating them in the CP. Peak ships with a default basic contact form you can edit."
         label: 'Send a form'
         link_type: entry
@@ -84,14 +140,14 @@ page_builder:
         button:
           -
             id: llz6sh4t
-            label: 'Send a form'
+            label: 'Learn more'
             link_type: entry
             target_blank: false
-            entry: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
+            entry: 8132222d-09d2-4927-9c2b-c198326d0778
             button_type: inline
       -
         id: lly5mxh7
-        title: 'Long form content'
+        title: 'Provide a space and the resources for tabletop gaming'
         text: 'For long form content you can use the Article content block. This is a Bard fieldtypeopen in new window with multiple sets of fields that are regularly used in longer articles.'
         label: 'Read an article'
         link_type: entry
@@ -110,7 +166,7 @@ page_builder:
             button_type: inline
       -
         id: lly5nvk4
-        title: 'Way more features'
+        title: 'Creating a community'
         text: 'Professional SEO, social image generation, responsive assets, appearance globals, favicons generation, search templates, dark mode support with toggle, pagination template, search and additional bottles of oxygen.'
         label: 'Climb the docs'
         link_type: url
@@ -122,9 +178,9 @@ page_builder:
         button:
           -
             id: llz6t5ao
-            label: 'Read the docs'
+            label: 'Join us!'
             link_type: url
             target_blank: true
-            url: 'https://peak.1902.studio'
+            url: 'https://discord.gg/Am3XHFj'
             button_type: inline
 ---

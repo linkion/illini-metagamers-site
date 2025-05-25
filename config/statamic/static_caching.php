@@ -61,6 +61,7 @@ return [
             '/site.webmanifest',
             '/sitemap.xml',
             '/sitemaps.xml',
+            '/feed*',
         ],
     ],
 

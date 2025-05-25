@@ -3,6 +3,8 @@
 @import "./typography.css";
 @import "./raptor.css";
 
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
     --color-primary: oklch(53.24% 0.301 290.86);
 
