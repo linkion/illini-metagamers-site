@@ -30,6 +30,13 @@ fields:
               fields:
                 -
                   import: cards
+            team:
+              display: Team
+              instructions: 'Show members of a team.'
+              icon: person
+              fields:
+                -
+                  import: team
             campaign-list:
               display: "Campaign List"
               instructions: "Present a view of Club Campaigns"

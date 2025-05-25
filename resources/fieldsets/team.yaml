@@ -1,0 +1,54 @@
+title: Team
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      localizable: true
+      display: Title
+  -
+    handle: people
+    field:
+      reorderable: true
+      type: replicator
+      localizable: true
+      display: People
+      replicator_preview: false
+      collapse: accordion
+      hide_display: true
+      button_label: 'Add person'
+      sets:
+        people:
+          display: People
+          sets:
+            card:
+              display: Person
+              fields:
+                -
+                  handle: image
+                  field: common.image
+                  validate: required
+                -
+                  handle: name
+                  field:
+                    type: text
+                    localizable: true
+                    validate: required
+                    display: Name
+                -
+                  handle: title
+                  field:
+                    type: text
+                    localizable: true
+                    display: Title
+                -
+                  handle: text
+                  field: common.text_plain
+                  config:
+                    display: Text
+                -
+                  handle: button
+                  field: buttons.buttons
+                  config:
+                    display: Button
+                    max_rows: 1
