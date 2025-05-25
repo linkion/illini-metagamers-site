@@ -6,8 +6,8 @@ fields:
       type: text
       localizable: true
       display: Title
-  -
-    handle: ical
-    field:
-      type: text
-      display: iCal Link
+#  -
+#    handle: ical
+#    field:
+#      type: text
+#      display: iCal Link
