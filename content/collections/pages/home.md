@@ -3,27 +3,13 @@ id: home
 blueprint: page
 title: Home
 updated_by: 1
-updated_at: 1748209426
+updated_at: 1748224735
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 page_builder:
-  -
-    id: mb46p0i5
-    title: 'Join Our Community!'
-    text: 'We at the Illini Metagamers invite you to join us, enjoy tabletop gaming, and meet like minded people!'
-    buttons:
-      -
-        id: mb46qo21
-        label: 'Join us!'
-        link_type: url
-        target_blank: false
-        url: 'https://google.com'
-        button_type: button
-    type: call_to_action
-    enabled: true
   -
     id: T5ZZwBfn
     article:
@@ -77,6 +63,20 @@ page_builder:
                   title: null
             text: 'https://discord.gg/Am3XHFj.'
     type: article
+    enabled: true
+  -
+    id: mb46p0i5
+    title: 'Join Our Community!'
+    text: 'We at the Illini Metagamers invite you to join us, enjoy tabletop gaming, and meet like minded people!'
+    buttons:
+      -
+        id: mb46qo21
+        label: 'Join us!'
+        link_type: url
+        target_blank: false
+        url: 'https://discord.gg/Am3XHFj'
+        button_type: button
+    type: call_to_action
     enabled: true
   -
     id: mb3qh6h3
