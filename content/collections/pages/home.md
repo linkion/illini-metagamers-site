@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 1
-updated_at: 1748556398
+updated_at: 1748557444
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -102,7 +102,7 @@ page_builder:
         title: Treasurer
         type: card
         enabled: true
-        image: blank-profile-picture.webp
+        image: oravepatrick_profile.jpg
       -
         id: mb3qj2oz
         name: Ethan
