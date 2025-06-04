@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 1
-updated_at: 1748224735
+updated_at: 1748992034
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -87,15 +87,17 @@ page_builder:
         name: Michael
         type: card
         enabled: true
-        image: blank-profile-picture.webp
+        image: michael-profile.webp
         title: President
+        text: "Michael is a Junior History and Classics Major from a family of board game lovers. Inspired by titans like Critical Role and Dimension 20, and a deep love for all things fantasy, he started playing games like D&D and Magic: the Gathering in middle school, and hasn't stopped since."
       -
         id: mb3qix96
         name: Rose
         title: Vice-President
         type: card
         enabled: true
-        image: blank-profile-picture.webp
+        image: rose-profile.jpg
+        text: 'Rose is a junior pursuing a major in Earth, Society, and Environmental Sustainability, and a minor in Urban Planning. She loves stories and making art, and has been playing D&D since middle school.'
       -
         id: mb3qh7i4
         name: 'Patrick Orave'
@@ -110,11 +112,20 @@ page_builder:
         title: 'Membership Director'
         type: card
         enabled: true
-        image: blank-profile-picture.webp
+        image: ethan-profile.jpg
+        text: 'Ethan is a sophomore majoring in Physics with a minor in Philosophy. An avid fantasy fan, he has been both reading and writing fantasy nonstop for years, including D&D games, short stories, and more.'
       -
         id: mb3qj7aq
         name: 'Sam Brown'
         title: 'Event Coordinator'
+        type: card
+        enabled: true
+        image: blank-profile-picture.webp
+      -
+        id: mbh4iyy1
+        name: Tony
+        title: Secretary
+        text: 'Tony is a senior majoring in History and Creative Writing. He has been playing TTRPGs such as D&D since middle school and is a big fan of all things horror with a particular fondness for the Call of Cthulhu TTRPG system.'
         type: card
         enabled: true
         image: blank-profile-picture.webp
