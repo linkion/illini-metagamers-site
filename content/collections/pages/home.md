@@ -104,8 +104,7 @@ page_builder:
         title: Treasurer
         type: card
         enabled: true
-        text: 'I manage money and stuff'
-        image: blank-profile-picture.webp
+        image: oravepatrick_profile.jpg
       -
         id: mb3qj2oz
         name: Ethan
